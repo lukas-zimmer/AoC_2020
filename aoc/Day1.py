@@ -1,7 +1,7 @@
 from utils.logger import Logger
 
 
-class DayOnePartOne:
+class DayOne:
     log = Logger.logger
 
     def __init__(self):

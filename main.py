@@ -1,8 +1,8 @@
-from aoc.Day1 import DayOnePartOne
+from aoc.Day1 import DayOne
 
 
 def main():
-    d = DayOnePartOne()
+    d = DayOne()
     d.part_one()
     d.part_two()
 
