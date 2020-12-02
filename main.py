@@ -1,10 +1,11 @@
 from aoc.Day1 import DayOne
+from aoc.Day2 import DayTwo
 
 
 def main():
-    d = DayOne()
-    d.part_one()
-    d.part_two()
+    d = DayTwo()
+    print(d.part_one)
+    print(d.part_two)
 
 
 if __name__ == '__main__':
