@@ -15,9 +15,9 @@ def split_it_up(line):
 class DayTwo:
     def __init__(self):
         self.password_list = []
-        self.fill_password_list()
+        self.__fill_password_list()
 
-    def fill_password_list(self):
+    def __fill_password_list(self):
         data = open('./inputs/day2', 'r')
 
         for line in data:
@@ -25,7 +25,8 @@ class DayTwo:
             self.password_list.append(Password(min_rate, max_rate, char, pwd))
 
     def print_list(self):
-        print(self.password_list)
+        for i in self.password_list:
+            print(i)
 
     def part_one(self):
         counter = 0
