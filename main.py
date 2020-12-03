@@ -3,8 +3,6 @@ import os
 
 
 def main():
-    filepath = os.path.join("inputs", "day3")
-    print(filepath)
     a = DayThree()
     p1 = a.count_trees()
     print(p1)
