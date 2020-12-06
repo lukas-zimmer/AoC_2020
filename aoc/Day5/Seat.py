@@ -38,7 +38,7 @@ class Seat(object):
     def get_seat_id(self):
         return self.seat_id
 
-    #METHODS
+    # METHODS
     def __binary_space_partitioning(self, lower, upper, range_max, code):
         temp_array = [i for i in range(0, range_max)]
         for element in code:

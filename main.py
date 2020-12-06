@@ -1,20 +1,13 @@
-from aoc.Day3.Day3 import DayThree
-import os
+from aoc.Day4.Day4 import DayFour
+from aoc.Day5.Seat import Seat
+from aoc.Day5.Day5 import DayFive
 
 
 def main():
-    a = DayThree()
-    p1 = a.count_trees()
-    print(p1)
-
-    b = DayThree()
-    p2 = b.count_trees(1, 1)
-    p2 *= b.count_trees()
-    p2 *= b.count_trees(5, 1)
-    p2 *= b.count_trees(7, 1)
-    p2 *= b.count_trees(1, 2)
-    print(p2)
-
+    a = DayFive()
+    print(a.get_highest_seat_id())
+    print(a.where_is_my_fucking_seat())
+    
 
 if __name__ == '__main__':
     main()
