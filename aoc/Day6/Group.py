@@ -3,19 +3,20 @@ class Group(object):
 
     def __init__(self, answers=""):
         self.answer_dict = {}
-        self.fill_answer_dict(answers.rsplit("\n"))
+        self.answers = [i for i in answers.rsplit("\n")]
+        self.__setup()
+
+    def __setup(self):
+        self.__set_answer_dict()
+        self.__set_member()
 
     # GET ADD SET
-    def add_member(self):
-        self.member += 1
-
-    def get_answers(self):
-        return self.answer_dict
+    def __set_member(self):
+        self.member = len(self.answers)
 
     # METHODS
-    def fill_answer_dict(self, answers):
-        for i in answers:
-            self.add_member()
+    def __set_answer_dict(self):
+        for i in self.answers:
             for j in i:
                 if j in self.answer_dict:
                     temp = self.answer_dict[j] + 1
@@ -23,10 +24,10 @@ class Group(object):
                 else:
                     self.answer_dict[j] = 1
 
-    def say_yes_to_yourself(self):
+    def say_yes_to_coffee(self):
         return len(self.answer_dict)
 
-    def say_yes_to_the_world(self):
+    def say_yes_to_tee(self):
         counter = 0
         for i in self.answer_dict:
             if self.answer_dict[i] == self.member:
