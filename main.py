@@ -7,7 +7,7 @@ def main():
     a = DayFive()
     print(a.get_highest_seat_id())
     print(a.where_is_my_fucking_seat())
-    
+
 
 if __name__ == '__main__':
     main()

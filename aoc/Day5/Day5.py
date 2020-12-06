@@ -14,8 +14,4 @@ class DayFive(object):
         return int(set(range(self.seat_id_list[0], self.seat_id_list[-1])).difference(self.seat_id_list).pop())
 
     def __sorted_seat_list(self):
-        seat_list = []
-        for i in self.seats:
-            seat_list.append(i.seat_id)
-        seat_list = sorted(seat_list)
-        return seat_list
+        return sorted([i.seat_id for i in self.seats])
