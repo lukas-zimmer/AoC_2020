@@ -7,7 +7,7 @@ class DayFive(object):
         self.seat_id_list = self.__sorted_seat_list()
 
     def get_highest_seat_id(self):
-        return self.seat_id_list[-1]
+        return max(self.seat_id_list)
 
     def where_is_my_fucking_seat(self):
         # https://www.w3schools.com/python/ref_set_difference.asp
@@ -15,3 +15,6 @@ class DayFive(object):
 
     def __sorted_seat_list(self):
         return sorted([i.seat_id for i in self.seats])
+
+    def __str__(self):
+        return "Highest Seat ID: " + str(self.get_highest_seat_id()) + "\n" + "My Seat: " + str(self.where_is_my_fucking_seat())
