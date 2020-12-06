@@ -1,11 +1,10 @@
-from aoc.Day4.Day4 import DayFour
-from aoc.Day5.Seat import Seat
-from aoc.Day5.Day5 import DayFive
+from aoc.Day6.Day6 import DaySix
 
 
 def main():
-    a = DayFive()
-    print(a)
+    a = DaySix()
+    print(a.yes())
+    print(a.yesyes())
 
 
 if __name__ == '__main__':
