@@ -9,7 +9,7 @@ class DayFive(object):
     def get_highest_seat_id(self):
         return max(self.seat_id_list)
 
-    def where_is_my_fucking_seat(self):
+    def where_is_my_seat(self):
         # https://www.w3schools.com/python/ref_set_difference.asp
         return int(set(range(self.seat_id_list[0], self.seat_id_list[-1])).difference(self.seat_id_list).pop())
 
